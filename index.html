@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id = "wrapper">
+    <h1>Sap's Pizzeria </h1>
+    <br>
+
+    <div id=" buttons">
+        <button id="showPizza">Choose Pizza ></button> &nbsp;&nbsp;
+        <button id="showInfo">Your Info ></button> &nbsp;&nbsp;
+        <button id="showOrder">Order Confirmation</button>
+    </div>
+
+    <form id ="form1">
+        <div id="pizza">
+            <div id="radio">
+                <fieldset>
+                    <legend >Size</legend>
+                    <input type="radio" name = "size" id="small" data-pizza-price = "7" data-name = "Small" checked>
+                    <label for="small"> Small - $7 </label>
+
+                    <input type="radio" name = "size" id="medium" data-pizza-price = "9" data-name = "Medium">
+                    <label for="medium"> Medium - $9 </label>
+
+                    <input type="radio" name = "size" id="large" data-pizza-price = "12" data-name = "Large">
+                    <label for="large"> Large - $12</label>
+                </fieldset>
+                            <hr>
+
+                <fieldset>
+                    <legend>Crust</legend>
+                    <input type="radio" name = "crust" id="thin" data-name = "Thin Crust" checked>
+                    <label for="thin"> Thin Crust </label>
+
+                    <input type="radio" name = "crust" id="pan" data-name = "Pan">
+                    <label for="pan"> Pan </label>
+
+                    <input type="radio" name = "crust" id="gluten-free" data-name = "Gluten Free">
+                    <label for="gluten-free"> Gluten Free </label>
+                </fieldset>
+                            <hr>
+            </div>
+
+
+            <div class="row">
+                <div class ="column">
+                    <fieldset id = "meats">
+                        <legend>Meats - $1.50 each</legend>
+                        <input type="checkbox" name="meat" id="pepperoni" data-meat-price = "1.50"
+                               value="Pepperoni" class="form-check-input">
+                        <label class="form-check-label" for="pepperoni">Pepperoni </label>
+                        <br>
+                        <input type="checkbox" name="meat" id="beef" data-meat-price = "1.50"
+                               value="Beef" class="form-check-input">
+                        <label class="form-check-label" for="beef">Beef </label>
+                        <br>
+                        <input type="checkbox" name="meat" id="bacon" data-meat-price = "1.50"
+                               value="Bacon" class="form-check-input">
+                        <label class="form-check-label" for="bacon">Bacon </label>
+                        <br>
+                        <input type="checkbox" name="meat" id="salami" data-meat-price = "1.50"
+                               value="Salami" class="form-check-input">
+                        <label class="form-check-label" for="salami">Salami </label>
+                        <br>
+                        <input type="checkbox" name="meat" id="sausage" data-meat-price = "1.50"
+                               value="Sausage" class="form-check-input">
+                        <label class="form-check-label" for="sausage">Sausage </label>
+                        <br>
+                        <input type="checkbox" name="meat" id="grilled-chicken" data-meat-price = "1.50"
+                               value="Chicken" class="form-check-input">
+                        <label class="form-check-label" for="grilled-chicken">Grilled Chicken </label>
+                    </fieldset>
+
+                </div>
+                    <div class="column">
+                        <fieldset id = "veggies">
+                    <legend>Veggies - $1.00 each</legend>
+                    <input type="checkbox" name="veggie" id="banana-peppers" data-veggie-price = "1"
+                           value="Banana Peppers" class="form-check-input">
+                    <label class="form-check-label" for="banana-peppers">Banana Peppers </label>
+                    <br>
+                    <input type="checkbox" name="veggie" id="jalapeno-peppers" data-veggie-price = "1"
+                           value="Jalapeño Peppers" class="form-check-input" >
+                    <label class="form-check-label" for="jalapeno-peppers">Jalapeño Peppers </label>
+                    <br>
+                    <input type="checkbox" name="veggie" id="mushrooms" data-veggie-price = "1"
+                           value="Mushrooms" class="form-check-input">
+                    <label class="form-check-label" for="mushrooms">Mushrooms</label>
+                    <br>
+                    <input type="checkbox" name="veggie" id="onions" data-veggie-price = "1"
+                           value="Onions" class="form-check-input">
+                    <label class="form-check-label" for="onions">Onions</label>
+                    <br>
+                    <input type="checkbox" name="veggie" id="roma-tomatoes" data-veggie-price = "1"
+                           value="Roma Tomatoes" class="form-check-input">
+                    <label class="form-check-label" for="roma-tomatoes">Roma Tomatoes </label>
+                    <br>
+                    <input type="checkbox" name="veggie" id="green-olives" data-veggie-price = "1"
+                           value="Green Olives" class="form-check-input">
+                    <label class="form-check-label" for="green-olives">Green Olives</label>
+                    <br>
+                    <input type="checkbox" name="veggie" id="green-peppers" data-veggie-price = "1"
+                           value="Green Peppers" class="form-check-input">
+                    <label class="form-check-label" for="green-peppers">Green Peppers</label>
+                </fieldset>
+                    </div>
+                    </div>
+
+                    </div>
+
+                    <div id="info">
+
+                    <fieldset id = "addressInfo">
+                        <legend>Enter Delivery Information</legend>
+                        <label for="fname"> First Name: </label>
+                        <input type="text" name = "name" id="fname" required />
+                        <br>
+                        <label for="lname"> Last Name: </label>
+                        <input type="text" name = "name" id="lname" required />
+                        <br>
+                        <label for="delivery-address"> Address:</label>
+                        <input type="text" name = "address" id="delivery-address" required />
+                        <br>
+                        <label for="city"> City:</label>
+                        <input type="text" name = "address" id="city" required />
+                        <br>
+                        <label for="state"> State:</label>
+                        <input type="text" name = "address" id="state" required />
+                        <br>
+                        <label for="zip"> Zip Code:</label>
+                        <input type="text" name = "address" id="zip" required />
+                        <br>
+                        <label for="phone"> Phone Number: </label>
+                        <input type= "tel" id="phone" required />
+                    </fieldset>
+                    </div>
+
+                    <button id="buttonHide">Review Order ></button>
+                    <button id="placeOrder">Place Order</button>
+                </form>
+
+    <div id="orderDetails">
+         <fieldset class = "order">
+             <legend>Pizza Details</legend>
+             <table>
+                 <tr>
+                     <td>Size:</td>
+                     <td id = "sizeDisplay"></td>
+                </tr>
+                <tr>
+                    <td>Crust Type:</td>
+                    <td id = "crustName"></td>
+                </tr>
+                <tr>
+                    <td>Toppings:</td>
+                    <td id = "toppingsDisplay"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <hr>
+
+        <fieldset class="order">
+            <legend>Delivery Information</legend>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td id = "fullName"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td id = "addressDisplay"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td id = "phoneDisplay"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        <hr>
+
+            <fieldset class = "order">
+                <legend>Order Total</legend>
+                    <table id="finalPrice">
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td id = "subTotal"></td>
+                        </tr>
+                        <tr>
+                            <td>Tax Percent:</td>
+                            <td id = "taxPercent"></td>
+                        </tr>
+                        <tr>
+                            <td>Tax Amount:</td>
+                            <td id = "taxFee"></td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Fee:</td>
+                            <td id = "deliveryCharges"></td>
+                        </tr>
+
+                        <tr style="font-weight: bolder">
+                            <td >Total:</td>
+                            <td id = "grandTotal"></td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+    </div>
+
+    <h2 style="color: purple; font-weight: bold;" id="outputMessage"></h2>
+
+    </div>
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="pizza.js"></script>
+
+</body>
+</html>

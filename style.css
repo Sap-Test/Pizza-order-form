@@ -1,0 +1,151 @@
+body {
+    padding: 25px;
+    background-color: lightcyan;
+    color: #666666;
+    font-family: Arial sans-serif;
+    background-image: linear-gradient(lightseagreen, lightskyblue, lightblue, lightcyan);
+
+}
+
+#wrapper
+{
+    width: 90%;
+    background-color: lightcyan;
+    box-shadow: 960px 2048px 3px #333333;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1{
+    background-color: #002171;
+    color: yellow;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xxx-large;
+    margin-bottom: 0;
+    background-image: url("pizza-4330598_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 400%;
+    text-align: center;
+}
+
+#pizza {
+    background-color: transparent;
+    box-shadow: brown;
+    color: darkblue;
+    font-size: large;
+    width: 100%;
+    border: 5px solid green;
+    padding: 20px;
+
+    }
+
+#radio
+{
+    margin-left: 0;
+}
+
+.row
+{
+    display: flex;
+}
+
+.column
+{
+    flex: 25%;
+
+}
+
+
+#info
+{
+    background-color: transparent;
+    box-shadow: brown;
+    color: darkblue;
+    font-size: large;
+    width: 100%;
+    border: 5px solid green;
+    padding: 20px;
+}
+
+#orderDetails
+{
+    background-color: transparent;
+    box-shadow: brown;
+    color: darkblue;
+    font-size: large;
+    width: 100%;
+    border: 5px solid green;
+    padding: 20px;
+}
+
+.form-check-label
+{
+ margin-left: 35px;
+}
+
+.form-check-input{
+    margin-left: 15px;
+}
+
+
+.row
+{
+display: flex;
+}
+
+.column
+{
+    flex: 50%;
+    justify-content: flex-start;
+}
+
+
+label{
+    width: 240px;
+    display: inline-block;
+}
+
+input[type=text], select {
+    display: table-cell;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.column legend
+{
+    margin-left: 15px;
+}
+
+#buttonHide
+{
+margin-left: 500px
+}
+
+#outputMessage
+{
+    line-height: 400px;
+    background-image: url("pizza.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+button
+
+{
+    color: darkmagenta;
+    background-color: lightcoral;
+    font-size: large;
+}
+
+
+legend
+{
+    color: darkred;
+    text-decoration: underline;
+}
+
